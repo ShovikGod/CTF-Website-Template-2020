@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Lakshya CTF</title>
+    <title>eHacon • CTF</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
@@ -34,12 +34,12 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a href="index.html" class="pl-md-0 p-3 text-decoration-none text-light">
-                            <h3 class="bold"><span class="color_danger">LAKSHYA</span><span class="color_white">CTF</span></h3>
+                            <h3 class="bold"><span class="color_green">CTF.</span><span class="color_white">eHacon</span></h3>
                         </a>
                     </div>
                     <div class="navbar-nav ml-auto">
                         <a href="index.html" class="p-3 text-decoration-none text-light bold">Home</a>
-                        <a href="about.html" class="p-3 text-decoration-none text-light bold">About</a>
+                        <!-- <a href="about.html" class="p-3 text-decoration-none text-light bold">About</a> -->
                         <a href="hackerboard.html" class="p-3 text-decoration-none text-light bold">Hackerboard</a>
                         <a href="login.html" class="p-3 text-decoration-none text-light bold">Login</a>
                         <a href="register.html" class="p-3 text-decoration-none text-white bold">Register</a>
@@ -54,22 +54,52 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-10">
-                    <h1 class="display-1 bold color_white content__title">LAKSHYA CTF<span class="vim-caret">&nbsp;</span></h1>
+                    <h1 class="display-1 bold color_white content__title">eHacon CTF<span class="vim-caret">&nbsp;</span></h1>
                     <p class="text-grey text-spacey hackerFont lead mb-5">
                         Join the community and be part of the future of the information security industry.
                     </p>
                     <div class="row  hackerFont">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="reciept_id" placeholder="RecieptId(ex. EINC-5e5a93e4318db)">
-                                <small id="reciept_id_help" class="form-text text-muted">Don't have reciept id? Register <a target="_blank" href="http://pictinc.org/subevents_register/online/index1.php">here</a></small>
+                                <input type="text" class="form-control" id="team_name" placeholder="Team Name">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="team_name" placeholder="Team name">
+                                <input type="text" class="form-control" id="org" placeholder="Organisation">
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" id="password" placeholder="New Password">
+                                <small id="passHelp" class="form-text text-muted">Leader</small>
+                                <input type="text" class="form-control" id="lName" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="lEmail" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <small id="passHelp" class="form-text text-muted">Team Member 1</small>
+                                <input type="text" class="form-control" id="tm1Name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="tm1Email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <small id="passHelp" class="form-text text-muted">Team Member 2</small>
+                                <input type="text" class="form-control" id="tm2Name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="tm2Email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <small id="passHelp" class="form-text text-muted">Team Member 3</small>
+                                <input type="text" class="form-control" id="tm3Name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="tm3Email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
                                 <small id="passHelp" class="form-text text-muted">Make sure nobody's behind you</small>
+                                <input type="password" class="form-control" id="password-1" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password-2" placeholder="Confirm Password">
                             </div>
                             <div class="custom-control custom-checkbox my-4">
                                 <input type="checkbox" class="custom-control-input" id="solemnly-swear">
@@ -81,7 +111,7 @@
             </div>
             <div class="row">
                 <div class="col-xl-12">
-                    <button class="btn btn-outline-danger btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left typewriter" onclick="window.location.href='login.html';">
+                    <button class="btn btn-outline-success btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left" onclick="window.location.href='login.html';">
                             <h4>Register</h4>
                     </button>
                     <small id="registerHelp" class="mt-2 form-text text-muted">Already Registered? <a href="login.html">Login here</a></small>
