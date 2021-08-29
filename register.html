@@ -27,7 +27,7 @@
     </div>
     <div class="navbar-dark text-white">
         <div class="container">
-            <nav class="navbar px-0 navbar-expand-lg navbar-dark">
+            <nav class="navbar px-0 pb-0 navbar-expand-lg navbar-dark">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,7 +39,6 @@
                     </div>
                     <div class="navbar-nav ml-auto">
                         <a href="index.html" class="p-3 text-decoration-none text-light bold">Home</a>
-                        <!-- <a href="about.html" class="p-3 text-decoration-none text-light bold">About</a> -->
                         <a href="hackerboard.html" class="p-3 text-decoration-none text-light bold">Hackerboard</a>
                         <a href="login.html" class="p-3 text-decoration-none text-light bold">Login</a>
                         <a href="register.html" class="p-3 text-decoration-none text-white bold">Register</a>
@@ -53,56 +52,34 @@
     <div class="jumbotron bg-transparent mb-0 pt-3 radius-0">
         <div class="container">
             <div class="row">
-                <div class="col-xl-10">
-                    <h1 class="display-1 bold color_white content__title">eHacon CTF<span class="vim-caret">&nbsp;</span></h1>
+                <div class="col-xl-8">
+                    <h1 class="display-1 bold color_white content__title">eHACON CTF<span class="vim-caret">&nbsp;</span></h1>
                     <p class="text-grey text-spacey hackerFont lead mb-5">
                         Join the community and be part of the future of the information security industry.
                     </p>
                     <div class="row  hackerFont">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="team_name" placeholder="Team Name">
+                                <small class="form-text text-muted">To be filled by team leader</small>
+                                <input type="text" class="form-control" id="l-fName" placeholder="First Name" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="org" placeholder="Organisation">
+                                <input type="text" class="form-control" id="l-lName" placeholder=" Last Name" required>
                             </div>
                             <div class="form-group">
-                                <small id="passHelp" class="form-text text-muted">Leader</small>
-                                <input type="text" class="form-control" id="lName" placeholder="Name" required>
+                                <input type="text" class="form-control" id="team_name" placeholder="Team Name" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="lEmail" placeholder="Email" required>
+                                <input type="email" class="form-control" id="l-Email" placeholder="Email" required>
                             </div>
                             <div class="form-group">
-                                <small id="passHelp" class="form-text text-muted">Team Member 1</small>
-                                <input type="text" class="form-control" id="tm1Name" placeholder="Name">
+                                <input type="text" class="form-control" id="org" placeholder="Organisation" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="tm1Email" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <small id="passHelp" class="form-text text-muted">Team Member 2</small>
-                                <input type="text" class="form-control" id="tm2Name" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="tm2Email" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <small id="passHelp" class="form-text text-muted">Team Member 3</small>
-                                <input type="text" class="form-control" id="tm3Name" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="tm3Email" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <small id="passHelp" class="form-text text-muted">Make sure nobody's behind you</small>
-                                <input type="password" class="form-control" id="password-1" placeholder="Password">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="password-2" placeholder="Confirm Password">
+                                <input type="tel" class="form-control" id="mob" placeholder="Mobile Number" pattern="^\d{10}$ " required>
                             </div>
                             <div class="custom-control custom-checkbox my-4">
-                                <input type="checkbox" class="custom-control-input" id="solemnly-swear">
+                                <input type="checkbox" class="custom-control-input" id="solemnly-swear" required>
                                 <label class="custom-control-label" for="solemnly-swear">I solemnly swear that I am up to no good.</label>
                             </div>
                         </div>
@@ -111,10 +88,10 @@
             </div>
             <div class="row">
                 <div class="col-xl-12">
-                    <button class="btn btn-outline-success btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left" onclick="window.location.href='login.html';">
+                    <button class="btn btn-outline-success btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left" onclick="window.location.href='registered.html';">
                             <h4>Register</h4>
                     </button>
-                    <small id="registerHelp" class="mt-2 form-text text-muted">Already Registered? <a href="login.html">Login here</a></small>
+                    <small class="mt-2 form-text text-muted">Already Registered? <a href="login.html">Login here</a></small>
                 </div>
             </div>
         </div>

@@ -406,8 +406,8 @@ input[type="radio"].toggle:checked + label {
     background: url(../images/bg--world.png)!important;
 }
 
-.glitch__img_404 {
-    background: url(../images/404.gif)!important;
+.glitch__img_registered {
+    background: url(../images/registered.gif)!important;
     background-repeat: no-repeat!important;
     background-size: contain!important;
     background-position: center!important;
@@ -713,4 +713,8 @@ span.fail:after {
 
 #main {
     display: none;
+}
+
+.card{
+    background-color: #000000BF;
 }
