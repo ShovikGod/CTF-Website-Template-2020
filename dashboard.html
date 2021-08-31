@@ -40,6 +40,7 @@
                     <div class="navbar-nav ml-auto">
                         <a href="index.html" class="p-3 text-decoration-none text-light bold">Home</a>
                         <a href="hackerboard.html" class="p-3 text-decoration-none text-light bold">Hackerboard</a>
+                        <a href="profile.html" class="p-3 text-decoration-none text-light bold">Profile</a>
                         <a href="index.html" class="p-3 text-decoration-none text-light bold">Logout</a>
                     </div>
                 </div>
@@ -57,29 +58,44 @@
                     </p>
                     <div class="row align-items-stretch mb-5">
                         <div class="col-xl-3 col-12 mb-xl-0 mb-3">
-                            <div class="card btn btn-outline-success btn-shadow" style="height:100%">
+                            <div id="card-1" class="card btn btn-outline-success btn-shadow" style="height:100%">
                                 <div class="card-body align-items-center justify-content-center d-flex">
+                                    <button class="btn btn-danger btn-shadow card-delete" data-toggle="modal" data-target="#deleteConfirmationModal">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                     <h4 class="text-center display-5 bold color_white">{Name}</h4>
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="col-xl-3 col-12 mb-xl-0 mb-3">
-                            <div class="card btn btn-outline-success btn-shadow" style="height:100%">
+                            <div id="card-2" class="card btn btn-outline-success btn-shadow" style="height:100%">
                                 <div class="card-body align-items-center justify-content-center d-flex">
+                                    <button class="btn btn-danger btn-shadow card-delete" data-toggle="modal" data-target="#deleteConfirmationModal">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                     <h4 class="text-center display-5 bold color_white">{Name}</h4>
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="col-xl-3 col-12 mb-xl-0 mb-3">
-                            <div class="card btn btn-outline-success btn-shadow" style="height:100%">
+                            <div id="card-3" class="card btn btn-outline-success btn-shadow" style="height:100%">
                                 <div class="card-body align-items-center justify-content-center d-flex">
+                                    <button class="btn btn-danger btn-shadow card-delete" data-toggle="modal" data-target="#deleteConfirmationModal">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                     <h4 class="text-center display-5 bold color_white">{Name}</h4>
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="col-xl-3 col-12 mb-xl-0 mb-3">
-                            <div class="card btn btn-outline-success btn-shadow" style="height:100%">
+                            <div id="card-4" class="card btn btn-outline-success btn-shadow" style="height:100%">
                                 <div class="card-body align-items-center justify-content-center d-flex">
+                                    <button class="btn btn-danger btn-shadow card-delete" data-toggle="modal" data-target="#deleteConfirmationModal">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                     <h4 class="text-center display-5 bold color_white">{Name}</h4>
                                 </div>
                             </div>
@@ -89,7 +105,7 @@
             </div>
             <div class="row">
                 <div class="col-xl-12">
-                    <button class="btn btn-outline-success btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left" onclick="window.location.href='login.html';">
+                    <button class="btn btn-outline-success btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left" onclick="window.location.href='add-member.html';">
                             <h4>Add New Teammate</h4>
                     </button>
                 </div>
@@ -99,12 +115,34 @@
 
 
 
+    <!-- Delete Modal -->
+    <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" role="dialog" aria-labelledby="deleteConfirmation" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h6>Are you sure you want to remove your teammate?</h6>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-footer border-0">
+                    <button class="btn btn-dark btn-shadow px-3 my-2 ml-0 mr-3 ml-sm-1 text-left" data-dismiss="modal">No</button>
+                    <button class="btn btn-danger btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left" onclick="window.location.href='./dashboard.html';">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/buttonHandler.js"></script>
 
 </body>
 
